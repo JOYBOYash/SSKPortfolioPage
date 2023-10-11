@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio SSK</title>
+    <link rel="stylesheet" href="styl.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desk-nav">
+        <div class="logo"> SSK. </div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#home"> Home </a></li>
+                <li><a href="#about"> About </a></li>
+                <li><a href="#experience"> Experience </a></li>
+                <li><a href="#projects"> Projects </a></li>
+                <li><a href="#contact"> Contact </a></li>
+
+            </ul>
+        </div>
+    </nav>
+    <nav id="ham-nav">
+        <div class="logo"> SSK. </div>
+        <div class="ham-menu">
+            <div class="ham-icon" onclick="toggleMenu()">
+               <span></span>
+               <span></span>
+               <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#home" onclick="toggleMenu()"> Home </a></li>
+                <li><a href="#about" onclick="toggleMenu()"> About </a></li>
+                <li><a href="#experience"  onclick="toggleMenu()"> Experience </a></li>
+                <li class="proj-ham"><a href="#projects"  onclick="toggleMenu()"> Projects </a></li>
+                <li class="cnt-ham"><a href="#contact"  onclick="toggleMenu()"> Contact </a></li> 
+            </div>
+        </div>
+    </nav>
+    <section id="home">
+        <div class="section_pic-cnt">
+            <img src="./Assets/profile_pic.png"  alt="SSK Profile">
+        </div>
+        <div class="section_txt">
+            <p class="section_txt_p1">Hello, World! </p>
+            <h1 class="title"> Sri Swaroop Kumar </h1>
+            <p class="section_txt_p2">An Aspiring Dev </p>
+            <div class="btn-cnt">
+                <button class="btn btn-color-2"
+                onclick="window.open('./Assets/Sri Swaroop KumarAkili_Resume.pdf')"> MY CV </button>
+
+                <button class="btn btn-color-1 hm-cnt-btn"
+                onclick="location.href='./#Contact'"> Contact Info </button>
+            </div>
+           <div id="socials-cnt">
+            <img src="Assets/linkedin.png" alt="My LinkedIn Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/sri-swaroop-kumar-joyboy/'">
+            <img src="Assets/github.png" alt="My Github Profile" class="icon" onclick="location.href='https://github.com/JOYBOYash'">
+           </div> 
+        </div>
+    </section>
+    <section id="about">
+        <p class="section_txt_p1"> Get to know more </p>
+        <h1 class="title"> About Me !</h1>
+  <div class="section-cnt">
+        <div class="section_pic-cnt">
+            <img src="Assets/about_pic.png" alt="profile" class="about-pic">
+        </div>
+      <div class="abt-details-cnt">
+          <div class="abt-cntr">
+            <div class="details-cntr">
+                <img src="Assets/experience.png" alt="icon-exp" class="icon">
+                <h3> Skills </h3>
+                <p> Creativity & Public Speaking <br> Game & Web Development</p>
+            </div>
+            <div class="details-cntr">
+                <img src="Assets/education.png" alt="icon-edu" class="icon">
+                <h3>Study Year & Course</h3>
+                <p> II year <br> Computer Science & Engineering ( Artificial Intelligence & Data Science )</p>
+            </div>
+          </div> 
+           <div class="txt-cnt">
+              <p>I'm Sri Swaroop Kumar, and I'm all about the digital world and its limitless possibilities. Building games, crafting websites, and diving headfirst into hackathons are my absolute passions. 
+                I revel in creating immersive games that transport players to new realms of excitement and challenge, pushing the boundaries of what's possible in the gaming world.
+                Designing captivating websites is another facet of my creative journey, where I blend artistry and functionality to craft user-friendly and visually stunning online experiences. 
+                But it's not just about the tech – it's about the spirit. I'm a firm believer in the power of positivity. I tackle every challenge with enthusiasm, seeing each obstacle as an opportunity for personal growth. That same positivity fuels my competitive spirit, driving me to excel in coding competitions, hackathons, and any tech challenge that comes my way. What truly sets me apart is my ability to work seamlessly in teams. 
+                I thrive in collaborative environments, where I can brainstorm, innovate, and work closely with others to bring projects to life. My commitment to effective communication and harmonious collaboration is a testament to my leadership qualities. In the ever-evolving world of technology, I'm here to prove that creativity, determination, and positive energy can take us far. 
+                Whether it's building games, designing websites, or diving into hackathons, my journey is an ongoing testament to the boundless opportunities of the digital age.
+              </p>
+          </div>
+      </div>
+  </div>
+        <img src="Assets/arrow.png" alt="next" class="icon arrow" onclick="location.href='./#experience'">
+    </section>
+    <section id="experience">
+        <p class="section_txt_p1"> Explore My </p>
+        <h1 class="title"> Experience </h1>
+        <div class="exp-details-cnt">
+            <div class="details-cntr">
+                <h2 class="experience-sub"> Web Development </h2>
+                <div class="article-cnt">
+                    <article>
+                        <img src="Assets/checkmark.png" alt="check-tick" class="icon">
+                        <div>
+                            <h3> HTML </h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="Assets/checkmark.png" alt="check-tick" class="icon">
+                        <div>
+                            <h3> CSS </h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="Assets/checkmark.png" alt="check-tick" class="icon">
+                        <div>
+                            <h3> JavaScript </h3>
+                            <p> Novice </p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="Assets/checkmark.png" alt="check-tick" class="icon">
+                        <div>
+                            <h3> React </h3>
+                            <p> Novice </p>
+                        </div>
+                    </article>
+                    
+                </div>
+            </div>
+            <div class="details-cntr">
+                <h2 class="experience-sub"> Game Development </h2>
+                <div class="article-cnt">
+                    <article>
+                        <img src="Assets/checkmark.png" alt="check-tick" class="icon">
+                        <div>
+                            <h3> Godot Engine </h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="Assets/checkmark.png" alt="check-tick" class="icon">
+                        <div>
+                            <h3> Blender </h3>
+                            <p> Novice </p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="Assets/checkmark.png" alt="check-tick" class="icon">
+                        <div>
+                            <h3> Krita </h3>
+                            <p> Beginner </p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="Assets/checkmark.png" alt="check-tick" class="icon">
+                        <div>
+                            <h3> Git </h3>
+                            <p> Novice </p>
+                        </div>
+                    </article>
+                    
+                </div>
+            </div>
+            <div class="details-cntr">
+                <h2 class="experience-sub"> Technical Skills </h2>
+                <div class="article-cnt">
+                    <article>
+                        <img src="Assets/checkmark.png" alt="check-tick" class="icon">
+                        <div>
+                            <h3> PPT's & Excel </h3>
+                            <p> Advanced </p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="Assets/checkmark.png" alt="check-tick" class="icon">
+                        <div>
+                            <h3> C Language </h3>
+                            <p> Advanced </p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="Assets/checkmark.png" alt="check-tick" class="icon">
+                        <div>
+                            <h3> Python </h3>
+                            <p> Intermediate </p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="Assets/checkmark.png" alt="check-tick" class="icon">
+                        <div>
+                            <h3> Java </h3>
+                            <p> Beginner </p>
+                        </div>
+                    </article>
+                    
+                </div>
+            </div>
+        </div>
+        <img src="Assets/arrow.png" alt="next" class="icon arrow" onclick="location.href='./#projects'">
+    </section>
+    <section id="projects">
+        <p class="section_txt-p1 proj-p"> Browse My Recent </p>
+        <h1 class="title proj-t">Projects</h1>
+        <div class="exp-details-cnt">
+            <div class="abt-cntr">
+                <div class="details-cnt color-cnt">
+                    <div class="article-cnt">
+                        <img src="Assets/neo-paper.jpg" alt="proj-1" class="project-img img-neo">
+                    </div>
+                    <h2 class="experience-sub project-title"> Prayuddha 2K23 </h2>
+                    <div class="btn-cnt">
+                        <button class="btn btn-color-1 project-btn" onclick="location.href='./Assets/neo-paper.jpg'"> Closer Look ! </button>
+                    </div>
+                </div>
+
+                <div class="details-cnt color-cnt">
+                    <div class="article-cnt">
+                        <img src="Assets/M2p_finalist.png" alt="proj-1" class="project-img img-mp">
+                    </div>
+                    <h2 class="experience-sub project-title"> M2P Title Hackathon </h2>
+                    <div class="btn-cnt">
+                        <button class="btn btn-color-1 project-btn" onclick="location.href='./Assets/M2p_finalist.png'"> Closer Look ! </button>
+                    </div>
+                </div>
+                
+                <div class="details-cnt color-cnt">
+                    <div class="article-cnt">
+                        <img src="Assets/ISF.png" alt="proj-1" class="project-img img-sf">
+                    </div>
+                    <h2 class="experience-sub project-title"> Creative Head Of ISF, SET, DSU </h2>
+                    <div class="btn-cnt">
+                        <button class="btn btn-color-1 project-btn" onclick="location.href='./Assets/ISF.png'"> Closer Look ! </button>
+                    </div>
+                </div>
+                
+            </div>
+            <h2 class="experience-sub project-title end-disc"> Many More Yet to Come... </h2>
+        </div>
+        
+        <img src="Assets/arrow.png" alt="next" class="icon arrow" onclick="location.href='./#contact'">
+    </section>
+    <section id="contact">
+        <p class="section_txt-p1"> Get in Touch </p>
+        <h1 class="title"> Contact Me </h1>
+        <div class="contact-info-u-cnt">
+            <div class="contact-info-cnt">
+                <img src="Assets/email.png" class="icon contact-icon mail-icon">
+                <p><a href="mailto:sriswaroop12005@gmail.com"> sriswaroop12005@gmail.com </a></p>
+            </div>
+            <div class="contact-info-cnt">
+                <img src="Assets/linkedin.png" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/sri-swaroop-kumar-joyboy/"> DM me !</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-cnt">
+                <ul class="nav-links">
+                    <li><a href="#home"> Home </a></li>
+                    <li><a href="#about"> About </a></li>
+                    <li><a href="#experience"> Experience </a></li>
+                    <li><a href="#projects"> Projects </a></li>
+                    <li><a href="#contact"> Contact </a></li>
+                </ul>
+            </div>
+        </nav>
+        <p> Copyright &#169; 2023 Joy_Boy_SSK. <span>All Rights Reserved </span> </p>
+    </footer>
+ <script src="script.js"></script>
+</body>
+</html>
